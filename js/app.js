@@ -45,8 +45,6 @@
       menu.foundItems.splice(index, 1);
     }
   }
-
-
   MenuSearchService.$inject = ['$http', 'ApiBasePath'];
   function MenuSearchService($http, ApiBasePath) {
     var service = this;
