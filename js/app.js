@@ -9,7 +9,7 @@
 
 
   function FoundItemsDirective() {
-    console.log("In FoundItemsDirective");
+    console.log('In FoundItemsDirective');
     var ddo = {
       restrict: 'AE',
       templateUrl: 'found-items.html',
@@ -26,13 +26,13 @@
   }
 
   function MenuItemsDirectiveController() {
-    console.log("In MenuItemsDirectiveController");
+    console.log('In MenuItemsDirectiveController');
     var menu = this;
   }
 
   NarrowItDownController.$inject = ['MenuSearchService'];
   function NarrowItDownController(MenuSearchService) {
-    console.log("In NarrowItDownController");
+    console.log('In NarrowItDownController');
     var menu = this;
     menu.searchTerm = '',
 
@@ -50,11 +50,11 @@
   }
   MenuSearchService.$inject = ['$http', 'ApiBasePath'];
   function MenuSearchService($http, ApiBasePath) {
-    console.log("In MenuSearchService");
+    console.log('In MenuSearchService');
     var service = this;
 
     service.getMatchedMenuItems = function (searchTerm) {
-      console.log("In getMatchedMenuItems");
+      console.log('In getMatchedMenuItems');
       return $http({
         method: "GET",
         url: (ApiBasePath + "/menu_items.json")
