@@ -1,4 +1,4 @@
-<!-- <h1>Result</h1>
+<h1>Result</h1>
 <div ng-if="list.isEmpty()">Nothing found</div>
 <ul>
   <li ng-repeat="item in list.found">
@@ -6,17 +6,3 @@
     <button ng-click="list.onRemove({index: $index});">Don't want this one!</button>
   </li>
 </ul>
- -->
-
- <ol class="found-items-list">
-  <li ng-repeat="item in menu.foundItems">
-    <div><strong>Name:</strong> {{ item.name }}</div>
-    <div><strong>Description:</strong> {{ item.description }}</div>
-    <div><strong>Large portion name:</strong> {{ item.large_portion_name }}</div>
-    <div><strong>Price large:</strong> {{ item.price_large }}</div>
-    <div><strong>Price small:</strong> {{ item.price_small }}</div>
-    <div><strong>Small portion name:</strong> {{ item.small_portion_name }}</div>
-    <button ng-click="menu.onRemove({index: $index});">Remove Item</button>
-  </li>
-</ol>
-<div class="nothing-found" ng-show="!menu.foundItems || menu.foundItems.length === 0">Nothing found.</div>
